@@ -16,10 +16,7 @@
     "url": "https://github.com/kuatsu/prisma-generator-ts-enums.git"
   },
   "publishConfig": {
-    "access": "public",
-    "branches": [
-      "master"
-    ]
+    "registry": "https://npm.pkg.github.com"
   },
   "files": [
     "dist"
