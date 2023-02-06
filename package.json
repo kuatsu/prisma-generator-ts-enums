@@ -1,0 +1,60 @@
+{
+  "name": "@kuatsu/prisma-generator-ts-enums",
+  "version": "0.1.0",
+  "author": "Kuatsu Digital Agency <hello@kuatsu.de>",
+  "main": "dist/index.js",
+  "release": {
+    "branches": [
+      "master"
+    ]
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/kuatsu/prisma-generator-ts-enums",
+  "description": "Automatically generates pure TypeScript enums from the enums in your Prisma schema.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuatsu/prisma-generator-ts-enums.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "branches": [
+      "master"
+    ]
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "prisma",
+    "prisma generator",
+    "prisma typescript",
+    "prisma enum",
+    "enums"
+  ],
+  "scripts": {
+    "watch": "tsc -w",
+    "start": "node dist/index.js",
+    "clean": "rimraf -rf ./dist",
+    "build": "yarn clean && tsc",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@types/node": "18.11.19",
+    "@types/prettier": "2.7.2",
+    "@typescript-eslint/eslint-plugin": "5.51.0",
+    "@typescript-eslint/parser": "5.51.0",
+    "eslint": "8.33.0",
+    "husky": "^8.0.3",
+    "prisma": "4.9.0",
+    "semantic-release": "^19",
+    "typescript": "4.9.5"
+  },
+  "dependencies": {
+    "@prisma/client": "4.9.0",
+    "@prisma/generator-helper": "^4.9.0",
+    "prettier": "^2.3.2",
+    "rimraf": "^4.1.2"
+  }
+}
