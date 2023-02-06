@@ -12,6 +12,7 @@ generator client {
 
 generator enum {
   provider = "node ./dist/index.js"
+  output = "./types/enums.d.ts"
 }
 
 enum Role {

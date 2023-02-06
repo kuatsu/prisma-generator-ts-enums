@@ -32,7 +32,7 @@ Add the generator to your schema.
 ```prisma
 generator enum {
   provider = "node node_modules/@kuatsu/prisma-generator-ts-enums" // specify the path to this generator here
-  output   = "./types" // optionally, you can specify an output path here -- default is ./types
+  output   = "./enums/index.d.ts" // optionally, you can specify an output filename here -- default is ./types/enums.d.ts
 }
 ```
 

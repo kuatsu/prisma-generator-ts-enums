@@ -6,7 +6,7 @@ import path from 'path';
 generatorHandler({
   onManifest() {
     return {
-      defaultOutput: './types',
+      defaultOutput: './types/enums.d.ts',
       prettyName: 'Prisma TypeScript Enum Generator',
     };
   },
@@ -34,11 +34,11 @@ generatorHandler({
           parser: 'typescript',
         });
 
-        await fs.promises.mkdir(output, {
+        await fs.promises.mkdir(path.dirname(output), {
           recursive: true,
         });
 
-        await fs.promises.writeFile(path.join(output, 'enums.d.ts'), result);
+        await fs.promises.writeFile(output, result);
       } catch (error) {
         console.error(error);
         throw error;
