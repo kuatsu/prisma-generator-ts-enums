@@ -19,6 +19,7 @@ jobs:
         run: yarn eslint .
       - name: Release
         env:
-          GH_TOKEN: ${{ secrets.CICD_PAT }}
+          NPM_TOKEN: ${{ secrets.CICD_PAT }}
+          GITHUB_TOKEN: ${{ secrets.CICD_PAT }}
           NODE_AUTH_TOKEN: ${{ secrets.CICD_PAT }}
         run: yarn semantic-release
