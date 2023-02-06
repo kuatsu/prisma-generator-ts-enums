@@ -9,7 +9,7 @@ Automatically generates pure TypeScript enums from the enums in your [Prisma](ht
 
 ## Why?
 
-If you're like us and love both monorepos and Prisma, you might run into some trouble when trying to use the native Prisma-generated enums from `@prisma/client` in other apps. For example, this often becomes an issue with React Native / Expo apps that won't correctly run due to it not finding the enums at runtime. Using this generator, you can bypass those issues by generating native TypeScript enums from your Prisma schema enums to use those in your other apps instead.
+If you're like us and love both monorepos and Prisma, you might run into some trouble when trying to use the native Prisma-generated enums from `@prisma/client` in other apps. For example, this often becomes an issue with React Native / Expo apps that won't correctly run due to it not finding the enums at runtime. Using this generator, you can bypass those issues by generating native TypeScript enums from your Prisma schema.
 
 ## Installation & Usage
 
