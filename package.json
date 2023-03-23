@@ -8,6 +8,9 @@
       "master"
     ]
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "homepage": "https://github.com/kuatsu/prisma-generator-ts-enums",
   "description": "Automatically generates pure TypeScript enums from the enums in your Prisma schema.",
