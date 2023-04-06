@@ -11,7 +11,6 @@ jobs:
         with:
           node-version: 16
           cache: yarn
-          scope: '@kuatsu'
       - name: Install dependencies
         run: yarn --frozen-lockfile
       - name: Lint

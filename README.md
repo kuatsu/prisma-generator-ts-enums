@@ -15,14 +15,10 @@ If you're like us and love both monorepos and Prisma, you might run into some tr
 
 First, install the package.
 
-```bash
-$ npm install @kuatsu/prisma-generator-ts-enums
-```
-
-or
-
-```bash
-$ yarn add @kuatsu/prisma-generator-ts-enums
+```sh
+$ npm install prisma-generator-ts-enums
+#or
+$ yarn add prisma-generator-ts-enums
 ```
 
 ### Add the generator
@@ -31,7 +27,7 @@ Add the generator to your schema.
 
 ```prisma
 generator enum {
-  provider = "node node_modules/@kuatsu/prisma-generator-ts-enums" // specify the path to this generator here
+  provider = "node node_modules/prisma-generator-ts-enums" // specify the path to this generator here
   output   = "./enums/index.d.ts" // optionally, you can specify an output filename here -- default is ./types/enums.d.ts
 }
 ```

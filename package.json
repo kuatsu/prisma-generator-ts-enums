@@ -1,5 +1,5 @@
 {
-  "name": "@kuatsu/prisma-generator-ts-enums",
+  "name": "prisma-generator-ts-enums",
   "version": "0.1.0",
   "author": "Kuatsu Digital Agency <hello@kuatsu.de>",
   "main": "dist/index.js",
